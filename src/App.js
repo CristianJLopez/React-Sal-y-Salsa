@@ -1,8 +1,8 @@
 
 import './App.css';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import LoginButton from './components/Login';
-import LogoutButton from './components/Logout';
-import UserAuthenticated from './UserAuthenticated';
+import UserAuthenticated from './components/UserAuthenticated';
 import { useAuth0 } from "@auth0/auth0-react";
 
 function App() {
@@ -11,15 +11,10 @@ function App() {
   return (
     <div className="App">
       {isAuthenticated ?(
-        <>
         <UserAuthenticated/>
-        <LogoutButton/>
-        </>
       ):
-      <>
-      <LoginButton/>
-      </>}
-
+        <LoginButton/>
+      }
     </div>
   );
 }

@@ -1,5 +1,8 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
+import AddProduct from "./AddProduct";
+import AdminHeader from "./AdminHeader";
+import "../css/UserAuth.css";
 
 const UserAuthenticated = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
@@ -10,11 +13,14 @@ const UserAuthenticated = () => {
 
   return (
     isAuthenticated && (
-      <div>
+      <div className="contenido">
+        <AdminHeader/>
+        <br/>
         <img src={user.picture} alt={user.name} />
-        <h2>{user.name}</h2>
-        <p>{user.email}</p>
-        <h1>Bienvenido al area administrativa del restaurante Sal & Salsa</h1>
+        <h3> {user.name} </h3>
+        <p>Correo: {user.email}</p>
+        <br/>
+        <AddProduct/>
       </div>
     )
   );
