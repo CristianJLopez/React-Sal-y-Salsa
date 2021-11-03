@@ -1,5 +1,5 @@
 import React, {Fragment, useState} from 'react';
-import "../css/UserAuth.css"
+import "../../css/UserAuth.css"
 import Swal from 'sweetalert2';
 
 const AddProduct = ()=> {

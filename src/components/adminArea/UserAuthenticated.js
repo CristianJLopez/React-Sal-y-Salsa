@@ -2,7 +2,7 @@ import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import AddProduct from "./AddProduct";
 import AdminHeader from "./AdminHeader";
-import "../css/UserAuth.css";
+
 
 const UserAuthenticated = () => {
   const { user, isAuthenticated, isLoading } = useAuth0();
