@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import LoginButton from './buttons/Login';
+import LoginButton from '../buttons/Login';
+import Home from '../Home';
 
 
 export default class Header extends Component {
@@ -7,8 +8,8 @@ export default class Header extends Component {
         return (
             <>
                <nav className="navbar navbar-expand-lg navbar-light bg-dark" id="menu">
-                 <div className="header-container">
-                     <a className="navbar-brand" id="title" href="index">sal&salsa  </a> <LoginButton/>
+                 <div className="container" id="header-container">
+                     <a className="navbar-brand" id="title" href={Home}>sal&salsa  </a> <LoginButton/>
                      
                  </div>
                 </nav>

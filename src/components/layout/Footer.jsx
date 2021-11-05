@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import Map from './Map';
-import "../css/Footer.css";
-import Logo from "../images/logo.png"
+import Map from '../Map';
+import "../../css/Footer.css"
+import Logo from "../../images/logo.png"
 
 class Footer extends Component {
     render() {

@@ -1,18 +1,25 @@
-
-.wrapper {
-  width: 100%;
-}
-.container {
-  width: 100vh;
-  margin: 0 auto;
-  height: 200vh;
+body{
   
 }
-.header-container{
+.wrapper {
+  
+  display: flexbox;
+}
+.container {
+  max-width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  
+}
+#h1title{
+  color: rgb(148, 86, 20);
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+#header-container{
   width: 1300px;
   margin: 0 auto;
   height: 10vh;
-  
+  align-content: center;
 }
 #card{
   padding: 20px 5px 5px 20px;
@@ -34,4 +41,30 @@
 #col1{
   background: rgb(213, 221, 230);
   display: block;
+}
+#footer{
+  position: absolute;
+}
+#social-media {
+  list-style: none;
+  padding-left: 0px;
+  padding-right: 3px;
+  text-align: right;
+  margin-left: 90%;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+
+#social-media a{
+  background-color: orange;
+  padding: 10px;
+  border-radius: 2px;
+}
+
+#social-media img{
+  
+  width: 25px;
+  height: 25px;
+  
 }
