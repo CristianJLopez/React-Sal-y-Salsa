@@ -7,7 +7,7 @@ export default class Header extends Component {
         return (
             <>
                <nav className="navbar navbar-expand-lg navbar-light bg-dark" id="menu">
-                 <div className="container">
+                 <div className="header-container">
                      <a className="navbar-brand" id="title" href="index">sal&salsa  </a> <LoginButton/>
                      
                  </div>

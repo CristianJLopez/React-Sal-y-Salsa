@@ -5,8 +5,8 @@ export  class MapC extends Component {
     
     render() {
         const style = {
-            width: '35%',
-            height: '35%',
+            width: '45vh',
+            height: '35vh',
             margin: '5px'
           }
         return (

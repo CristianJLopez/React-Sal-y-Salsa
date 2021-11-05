@@ -46,23 +46,23 @@ const AddProduct = ()=> {
 
     return(
         <Fragment>
-            <hr/>
+            
             <h3>Agregar nuevo producto </h3>
-            <br/>
+            <br/><hr/>
             <form onSubmit = {handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Nombre:  &nbsp; </label>
                     <input type="text" className="form-control-sm" name="name" placeholder="Ingrese nombre"
                      defaultValue={product.name} onChange={handleChange} required/>&nbsp;&nbsp;
-                     <label htmlFor="price">Precio: &nbsp; </label>
+                    <br/><br/><hr/> <label htmlFor="price">Precio: &nbsp; </label>
                     <input type="number" step="1" min="0"
                      className="form-control-sm" name="price" placeholder="Ingrese precio"
                      defaultValue={product.price} onChange={handleChange} required/>&nbsp;&nbsp;
-                      <label htmlFor="image">Imagen: &nbsp; </label>
+                     <br/><br/><hr/> <label htmlFor="image">Imagen: &nbsp; </label>
                     <input type="file" className="form-control-sm" name="image" 
                       onChange={handleImage} />
                 </div>
-                <br/>
+                <br/><br/><br/><hr/>
                 <button type="submit" className="btn-success  btn-lg">Agregar producto</button>
             </form>
         </Fragment>

@@ -1,15 +1,16 @@
 import React, { Component } from 'react';
 import Map from './Map';
 import "../css/Footer.css";
+import Logo from "../images/logo.png"
 
 class Footer extends Component {
     render() {
         return (
             <>
-            <section id="footer">
+            <div id="footer">
             <div className="row">
                 <div className="col">
-                    <img src="images/logo.png" alt="logo"/>
+                    <img src={Logo} alt="logo"/>
                 </div>
                 <div className="col" id="enlaces">
                     <a href="../html/mapasitio.html">MAPA DEL SITIO</a>
@@ -22,11 +23,11 @@ class Footer extends Component {
                         31232525321 <br/>
                         &copy;Copyright 2020</p>
                 </div>
-                <div className="col" id="Map">
+                <div className="col" id="Mapa">
                    <Map/>
                 </div>
             </div>
-        </section>
+        </div>
             </>
         );
     }
