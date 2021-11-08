@@ -68,4 +68,10 @@ body{
   height: 25px;
   
 }
+#btn-admin{
+  margin-left: 530px;
+}
 
+.me-auto a{
+  padding-top: 22px!important;
+}
