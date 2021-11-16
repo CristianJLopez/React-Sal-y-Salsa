@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "./Header";
+
 import Footer from "./Footer";
+import MenuPrincipal from "./MenuPrincipal";
 
  function Layout(props){
      return <>
         <div className="wrapper">
-            <Header/>
+           <MenuPrincipal/>
                 <div className="container"> {props.children} </div>
              <Footer/>
         </div>

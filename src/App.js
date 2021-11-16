@@ -7,7 +7,7 @@ import UserAuthenticated from "./components/adminArea/UserAuthenticated"
 import Home from './components/Home';
 import Contacto from "./components/Contacto";
 import { useAuth0 } from "@auth0/auth0-react";
-import Carrousel from './components/Carrousel';
+import Menu from "./components/Menu";
 
 function App() {
   const {isAuthenticated} = useAuth0();
@@ -19,20 +19,14 @@ function App() {
         <UserAuthenticated/>
       ):
        <BrowserRouter>
-          <Routes>
-          
-          <Route path="/carrousel" element={<Carrousel />} />
-          
-          </Routes>
-        
-         
+               
           <Layout>
             <Routes>
               
               <Route path="/" element={<Home />} />
               <Route path="/users" element={<UserAuthenticated />} />
               <Route path="/contactanos" element={<Contacto />} />
-              
+              <Route path="/menu" element={<Menu />} />
             </Routes>
             
             </Layout>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import {Navbar, Container, Nav} from 'react-bootstrap';
-import LoginButton from './buttons/Login';
+import LoginButton from '../buttons/Login';
 
 export default class MenuPrincipal extends Component {
     render() {
@@ -9,10 +9,10 @@ export default class MenuPrincipal extends Component {
                 <>
   <Navbar bg="dark" variant="dark">
     <Container>
-    <Navbar.Brand href="#home"><h1>Sal&Salsa</h1></Navbar.Brand>
+    <Navbar.Brand href="/"><h1>Sal&Salsa</h1></Navbar.Brand>
     <Nav className="me-auto">
-      <Nav.Link href="/">Home</Nav.Link>
-      <Nav.Link href="/contact">Contacto</Nav.Link>
+      <Nav.Link href="/menu">Menu</Nav.Link>
+      <Nav.Link href="/contactanos">Contacto</Nav.Link>
       <Nav.Link href="/users">Usuarios</Nav.Link>
       
       <LoginButton/>

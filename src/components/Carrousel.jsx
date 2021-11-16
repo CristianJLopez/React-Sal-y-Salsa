@@ -4,13 +4,12 @@ import Logo from "../images/logo.png";
 import img1 from "../images/foto1.png";
 import img2 from "../images/foto2.png";
 import img3 from  "../images/otra.jpg";
-import MenuPrincipal from './MenuPrincipal';
+
 
 export default class Carrousel extends Component {
     render() {
         return (
-            <div>
-                <MenuPrincipal/>
+            <div className="carrousel">
                 <Carousel>
                 <Carousel.Item>
                     <img
