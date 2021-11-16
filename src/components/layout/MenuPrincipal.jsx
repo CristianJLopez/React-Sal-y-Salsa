@@ -13,7 +13,7 @@ export default class MenuPrincipal extends Component {
     <Nav className="me-auto">
       <Nav.Link href="/menu">Menu</Nav.Link>
       <Nav.Link href="/contactanos">Contacto</Nav.Link>
-      <Nav.Link href="/users">Usuarios</Nav.Link>
+      <Nav.Link href="/servicios">Servicios</Nav.Link>
       
       <LoginButton/>
     </Nav>

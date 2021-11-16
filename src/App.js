@@ -8,6 +8,7 @@ import Home from './components/Home';
 import Contacto from "./components/Contacto";
 import { useAuth0 } from "@auth0/auth0-react";
 import Menu from "./components/Menu";
+import Servicios from './components/Servicios';
 
 function App() {
   const {isAuthenticated} = useAuth0();
@@ -27,6 +28,7 @@ function App() {
               <Route path="/users" element={<UserAuthenticated />} />
               <Route path="/contactanos" element={<Contacto />} />
               <Route path="/menu" element={<Menu />} />
+              <Route path="/servicios" element={<Servicios />} />
             </Routes>
             
             </Layout>
