@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import twitter from "../images/ico-twitter@2x.png";
+import facebook from "../images/ico-facebook@2x.png";
+import youtube from "../images/ico-youtube@2x.png";
 
 export default class Contacto extends Component {
     render() {
@@ -9,11 +12,11 @@ export default class Contacto extends Component {
             <h1>Contáctanos</h1>    
             
             <ul id="social-media">
-                <li><a href="https://twitter.com/?lang=es" ><img src="../images/ico-twitter@2x.png" alt=""/></a></li>
+                <li><a href="https://twitter.com/?lang=es" ><img src={twitter} alt=""/></a></li>
                 <br/>
-                <li><a href="https://www.facebook.com/" ><img src="../images/ico-facebook@2x.png" alt=""/></a></li>
+                <li><a href="https://www.facebook.com/" ><img src={facebook} alt=""/></a></li>
                 <br/>
-                <li><a href="https://www.youtube.com/" ><img src="../images/ico-youtube@2x.png" alt=""/></a></li>
+                <li><a href="https://www.youtube.com/" ><img src={youtube} alt=""/></a></li>
             </ul>
           </div>
 

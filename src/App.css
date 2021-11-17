@@ -39,7 +39,8 @@ body{
   
 }
 #col1{
-  background: rgb(213, 221, 230);
+  background: rgb(252, 252, 252);
+  border-style: double;
   display: block;
 }
 #footer{

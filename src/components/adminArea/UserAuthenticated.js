@@ -1,7 +1,8 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import AddProduct from "./AddProduct";
-import LogoutButton from "../buttons/Logout"
+
+import AdminHeader from "./AdminHeader";
 
 
 const UserAuthenticated = () => {
@@ -13,8 +14,10 @@ const UserAuthenticated = () => {
 
   return (
     isAuthenticated && (
+      <div>
+      <AdminHeader/>
       <div className="row">
-        <div className="col-6" id="col1">
+        <div className="col-4 my-2 mx-4" id="col1">
         <br/><br/>
         <h5>Nombre funcionario: <small><i>{user.name}</i></small> </h5>
         <p>Foto de perfil</p>
@@ -23,15 +26,16 @@ const UserAuthenticated = () => {
         <p>Correo: {user.email}</p>
 
         <br/>
-        <LogoutButton/>
+        
         </div>
-        <div className="col-6">
+        <div className="col-4 my-2 mx-4">
         <AddProduct/>
         </div>
         
         
       </div>
       
+      </div>
     )
   );
 };
