@@ -1,10 +1,37 @@
-import React, { Component } from 'react';
+import React, {  useState } from 'react';
 import twitter from "../images/ico-twitter@2x.png";
 import facebook from "../images/ico-facebook@2x.png";
 import youtube from "../images/ico-youtube@2x.png";
+import Swal from 'sweetalert2';
 
-export default class Contacto extends Component {
-    render() {
+
+const AddContact = ()=> {
+const [item, setItem] = useState({
+ option: '',
+ asunto: null,
+  correo: null
+});
+
+const handleSubmit = (e) =>{
+  e.preventDefault();
+
+  const formData = new FormData();
+  formData.append('option', item.option);
+  formData.append('asunto', item.asunto);
+  formData.append('correo', item.correo);
+
+  contact(formData);
+
+};
+
+const contact = formData =>{
+  Swal.fire(
+      'Informacion recibida',
+      'pronto te responderemos al correo',
+      'success'
+  )
+}
+
         return (
             <div class="container">
         <div class="contactenos" >
@@ -45,10 +72,10 @@ export default class Contacto extends Component {
             </div>
 
             <div class="col align-self-start formulario" >
-                <form >
+                <form onSubmit = {handleSubmit} >
                     <div class="form-group col-md-4">
                         
-                        <select id="inputState" class="form-control">
+                        <select id="inputState" class="form-control" name="option" defaultValue="{item.option}">
                           <option selected>Selecciona el Servicio</option>
                           <option>Cumpleaños</option>
                           <option>Aniversario</option>   
@@ -60,12 +87,12 @@ export default class Contacto extends Component {
                       </div>
                     <div class="form-group">
                         
-                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Asunto "/>
+                      <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Asunto " name="asunto" defaultValue=""/>
                     </div>
 
                     <div class="form-group">
                         
-                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo electronico "/>
+                        <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Correo electronico" name="correo" defaultValue="" />
                       </div>
                     <div class="form-group">
                       
@@ -77,7 +104,7 @@ export default class Contacto extends Component {
                       </div>
 
                       <div class="form-group">
-                        <button type="button" class="btn btn-warning" >Enviar</button>
+                        <button type="submit" class="btn btn-warning" >Enviar</button>
 
                       </div>
                       
@@ -88,4 +115,5 @@ export default class Contacto extends Component {
           
         )
     }
-}
+;
+export default AddContact; 
